@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Guessing-Game</title>
+</head>
+<body>
+	<div class="container">
+		<div class="card-body">
+			<h1>Guessing game</h1>
+			<form action="#">
+				<div class="form-field">
+					<input type="number" name="random-number" id="guessingNumber" required placeholder="Guess a number between 1-5" min="1" max="5">
+					<button type="submit" class="button">check</button>
+				</div>
+			</form>
+			<p class="result-text">You have lost; guessing number is: <span class="randomNumber">0</span></p>
+			<p class="remainingAttempts">Remaining Attempts: <span class="attemptsNumber">5</span></p>
+			<p class="score">won: 0 / lost: 0</p>
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>

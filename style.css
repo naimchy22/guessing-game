@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:wght@300;500;900&display=swap');
+/* Reset code start  */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	outline: none;
+	border:none;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+/* Reset code end  */
+
+/* Golobal css start */
+html {
+	transition: .5s;
+}
+/* Golobal css end */
+
+h1 {
+  font-family: 'Bungee', cursive;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   background-clip: text;
+   color: #eee;
+   text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+   text-align: center
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    background: linear-gradient(#00000073,#000d307d),url(images/background.jpg) no-repeat center center / cover;
+    min-height: 100vh;
+}
+
+.container .card-body {
+	width: 30%;
+	min-width: 300px;
+	background: rgba(255, 255, 255, 0.06);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.44);
+}
+
+.container .card-body .form-field {
+	display: flex;
+	justify-content: center;
+	background: #0f0e0f40;
+		transition: all 1s;
+}
+
+.container .card-body .form-field input[type="number"]{
+	display: block;
+	padding: .7rem .5rem;
+	width: 50%;
+	text-align: center;
+	border-radius: 0px;
+	border: none;
+	transition: all .5s;
+	font-size: 1.1rem;
+}
+
+.container .card-body .form-field input:focus {
+	background: #eee;
+	transition: all .5s;
+}
+
+.container .card-body .form-field input::placeholder {
+	font-size: .6rem;
+	text-align: center;
+}
+
+.container .card-body .form-field button {
+	padding: 0.6rem 1rem;
+    border-radius: 0;
+	background: #f53b57;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.container .card-body .form-field button:hover {
+	background: #e13443;
+}
+
+.container .card-body .result-text{
+	opacity: 0;
+	transition: all .5s;
+	margin: 1rem 0 1rem;
+}
+.container .card-body .display{
+	transition: all .5s;
+	opacity: 1;
+}
+.container .card-body .result-text,.remainingAttempts,.score {
+	color: #fff;
+	font-weight: 300;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.container .card-body .remainingAttempts {
+	padding: 1rem 0 1rem;
+}
+
+.container .card-body .score {
+	font-weight: 900;
+	color: #eee;
+	text-shadow: rgba(255,255,255,0.5) 0px 2px 9px;
+	text-transform: capitalize;
+	padding-bottom: 1rem;
+}
+
+.randomNumber,.attemptsNumber {
+	color: #tomato;
+	font-weight: 900;
+}
+
+/* responsive css start*/
+
+@media screen and (max-width: 1080px){
+	.container .card-body {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 810px){
+	.container .card-body {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 600px){
+	h1 {
+		font-size: 2rem;
+	}
+	.container .card-body {
+		width: 90%;
+	}
+}
